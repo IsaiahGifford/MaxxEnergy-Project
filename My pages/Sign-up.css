@@ -1,0 +1,106 @@
+/* Root color variables */
+:root {
+  --background: white;
+  --foreground: #232323;
+  --primary-bg: rgba(73, 109, 167, 1); /* Blue background for inputs */
+  --primary-text: #FCB11A; /* Orange text */
+}
+
+/* Dark mode variables */
+.dark {
+  --background: #232323;
+  --foreground: white;
+}
+
+/* Base styles */
+body {
+  background-color: var(--background);
+  color: var(--foreground);
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+
+  /* Center all content in the viewport */
+  display: flex;
+  flex-direction: column; /* stack logo, heading, form vertically */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Logo */
+.logo {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem;
+}
+
+.logo img {
+  max-width: 100px;
+  height: auto;
+}
+
+/* Heading */
+h1 {
+  text-align: center;
+  font-weight: normal;
+  color: var(--foreground);
+  margin-bottom: 0.5rem;
+}
+
+.underline {
+  width: 80px;
+  height: 3px;
+  background-color: var(--primary-text);
+  margin: 0 auto 2rem;
+}
+
+/* Form */
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Form inputs */
+input {
+  width: 300px;
+  max-width: 90vw;
+  height: 44px;
+  padding: 0 1rem;
+  border: none;
+  border-radius: 4px;
+  background-color: var(--primary-bg);
+  color: var(--primary-text);
+  outline: none;
+  font-size: 1rem;
+  margin-bottom: 0.75rem;
+}
+
+input::placeholder {
+  color: var(--primary-text);
+  opacity: 1;
+}
+
+input:focus {
+  box-shadow: 0 0 0 2px var(--primary-text);
+}
+
+/* Submit button */
+button {
+  width: 300px;
+  max-width: 90vw;
+  height: 44px;
+  background-color: var(--primary-text);
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  color: var(--primary-bg);
+  font-size: 1rem;
+  cursor: pointer;
+  transition: opacity 0.3s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}

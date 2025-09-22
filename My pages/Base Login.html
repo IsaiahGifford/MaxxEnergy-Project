@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Screen</title>
+    <link rel="stylesheet" href="BaseLogin.css">
+</head>
+<body>
+<div class="page-wrapper">
+    <div class="form-container">
+        <!-- Logo Section -->
+        <div class="text-center">
+            <img src="maxx-energy-logo.png" alt="MAXX ENERGY Logo" class="logo">
+            <p class="subtitle">
+                Enter your email address to sign<br>
+                in or create an account
+            </p>
+        </div>
+
+        <!-- Form Section -->
+        <form class="form">
+            <div class="form-inputs">
+                <input type="email" placeholder="Email" class="input-style" required>
+                <input type="password" placeholder="Password" class="input-style" required>
+            </div>
+
+            <div class="form-actions">
+                <button type="submit" class="btn-primary">Sign In</button>
+                <a href="ResetPassword.html" class="btn-secondary">Forgot Password</a> <!-- Changed to anchor tag -->
+
+                <div class="divider">
+                    <div class="line"></div>
+                    <span class="divider-text">I don't have<br>an account</span>
+                    <div class="line"></div>
+                </div>
+
+                <a href="Sign-up.html" class="btn-primary">Sign Up</a>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

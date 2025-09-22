@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MAXX Energy FAQ</title>
+    <link rel="stylesheet" href="FAQ.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <div class="min-h-screen bg-gray-50">
+        <header class="bg-header shadow-lg px-6 py-6">
+            <div class="max-w-7xl mx-auto flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="maxx-energy-logo2.png" alt="MAXX Energy Logo" class="h-12 w-auto">
+                </div>
+                <nav class="hidden md:flex items-center space-x-12 text-white">
+                    <a href="index.html" class="nav-link">About Us</a>
+                    <a href="#data" class="nav-link">Data</a>
+                    <a href="#faq" class="nav-link">FAQ</a>
+                </nav>
+                <a href="Base Login.html" class="btn-primary">
+                    <i class="fas fa-user w-4 h-4 mr-2"></i>
+                    Login
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero Section -->
+        <div class="relative h-96 overflow-hidden">
+            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/AdobeStock_847300392-d9yClehCsDxEWb7Mg3JLQPfDYAfflX.jpeg" alt="Electric trucks charging at depot" class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-gray-50 via-gray-50/20 to-transparent"></div>
+        </div>
+
+        <!-- FAQ Content -->
+        <div class="max-w-4xl mx-auto px-6 py-12">
+            <!-- FAQ Title -->
+            <div class="text-center mb-12">
+                <h1 class="text-8xl font-bold mb-4">
+                    <span class="text-blue-1">F</span>
+                    <span class="text-blue-2">A</span>
+                    <span class="text-blue-3">Q</span>
+                </h1>
+            </div>
+
+            <!-- FAQ Sections -->
+            <div class="space-y-8">
+                <!-- Company Information -->
+                <div class="space-y-2">
+                    <div class="faq-header" onclick="toggleSection('company')">
+                        <div class="faq-indicator" id="company-indicator"></div>
+                        <h2 class="text-3xl font-semibold text-dark">Company Information</h2>
+                    </div>
+
+                    <div class="faq-content" id="company-content">
+                        <div class="ml-16 space-y-4 py-4">
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-1"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    What information can I find on the About Us page?
+                                </h3>
+                                <p class="text-gray-600">A brief summary of our companies goals and views.</p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-2"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">What are the core values of our company?</h3>
+                                <p class="text-gray-600">
+                                    Our core values focus on integrity, innovation, sustainability, and community engagement.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-3"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    How does our company contribute to sustainability?
+                                </h3>
+                                <p class="text-gray-600">
+                                    We focus on renewable energy, use energy-efficient practices, and engage in community outreach to
+                                    raise environmental awareness.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="space-y-2">
+                    <div class="faq-header" onclick="toggleSection('contact')">
+                        <div class="faq-indicator" id="contact-indicator"></div>
+                        <h2 class="text-3xl font-semibold text-dark">Contact Information</h2>
+                    </div>
+
+                    <div class="faq-content" id="contact-content">
+                        <div class="ml-16 space-y-4 py-4">
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-1"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    How can I contact the company for support or inquiries?
+                                </h3>
+                                <p class="text-gray-600">Contact form can be found at the bottom of the About Us page.</p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-4"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    What should I do if I encounter issues with the website?
+                                </h3>
+                                <p class="text-gray-600">
+                                    If you experience any issues, please reach out through the contact form on the Contact page.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-5"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    Can I submit suggestions or feedback about the website?
+                                </h3>
+                                <p class="text-gray-600">
+                                    Yes, we encourage all employees to provide feedback! You can submit your suggestions using the
+                                    contact form.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-6"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">Will my feedback be addressed?</h3>
+                                <p class="text-gray-600">
+                                    Yes, all feedback is reviewed by our team, and while we may not respond individually to every
+                                    submission, we value your input for future improvements.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Data Resources -->
+                <div class="space-y-2">
+                    <div class="faq-header" onclick="toggleSection('data')">
+                        <div class="faq-indicator" id="data-indicator"></div>
+                        <h2 class="text-3xl font-semibold text-dark">Data Resources</h2>
+                    </div>
+
+                    <div class="faq-content" id="data-content">
+                        <div class="ml-16 space-y-4 py-4">
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-1"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    What resources are available on the Data page?
+                                </h3>
+                                <p class="text-gray-600">
+                                    The Data page has important resources like reports, analytics, and data about our energy production
+                                    and use.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-2"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    Who has access to modify data on the Data page?
+                                </h3>
+                                <p class="text-gray-600">
+                                    Only admin users have the permissions to add or change data on the Data page.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-3"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    How often is the data on the Data page updated?
+                                </h3>
+                                <p class="text-gray-600">
+                                    The data is updated regularly, typically on a monthly basis, to ensure accuracy and relevance.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- User Profile Management -->
+                <div class="space-y-2">
+                    <div class="faq-header" onclick="toggleSection('profile')">
+                        <div class="faq-indicator" id="profile-indicator"></div>
+                        <h2 class="text-3xl font-semibold text-dark">User Profile Management</h2>
+                    </div>
+
+                    <div class="faq-content" id="profile-content">
+                        <div class="ml-16 space-y-4 py-4">
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-1"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">How can I access my user profile?</h3>
+                                <p class="text-gray-600">
+                                    To access your user profile, log in to the website and click on the profile icon located in the
+                                    upper right corner.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-2"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">How do I reset my password?</h3>
+                                <p class="text-gray-600">
+                                    To reset your password, click on the "Forgot Password?" link on the login page and follow the
+                                    instructions sent to your registered email.
+                                </p>
+                            </div>
+                            <div class="faq-item">
+                                <i class="fas fa-cloud faq-icon text-blue-3"></i>
+                                <h3 class="text-lg font-medium text-dark mb-2">
+                                    Can I change my email address associated with my profile?
+                                </h3>
+                                <p class="text-gray-600">
+                                    Yes, you can update your email address in your user profile settings. Make sure to verify the new
+                                    email address for security.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="bg-footer px-6 py-12 mt-16">
+            <div class="max-w-7xl mx-auto">
+                <div class="grid md:grid-cols-4 gap-8 mb-8">
+                    <div class="md:col-span-2">
+                        <div class="flex items-center space-x-4 mb-6">
+                            <img src="https://hebbkx1anhila5yf.public.blob.vercel-storage.com/MAXX-Energy-White-9AI3AiNTqLgs6N3EyiSbbjlwjbNGkF.png" alt="MAXX Energy Logo" class="h-12 w-auto">
+                        </div>
+                        <p class="text-footer-text leading-relaxed max-w-md">
+                            Leading the solar revolution with innovative energy solutions for a sustainable future.
+                        </p>
+                    </div>
+
+                    <div>
+                        <h3 class="text-white font-bold text-lg mb-4 uppercase tracking-wide">Quick Links</h3>
+                        <div class="space-y-2">
+                            <a href="index.html" class="block text-footer-text hover:text-yellow transition-colors">About Us</a>
+                            <a href="#data" class="block text-footer-text hover:text-yellow transition-colors">Data</a>
+                            <a href="#faq" class="block text-footer-text hover:text-yellow transition-colors">FAQ</a>
+                        </div>
+                    </div>
+
+                    <div class="footer-connect">
+                        <h3 class="text-white font-bold text-lg mb-4 uppercase tracking-wide">Connect</h3>
+                        <div class="flex space-x-4">
+                            <a href="#" class="social-link bg-facebook">
+                                <i class="fab fa-facebook-f w-6 h-6 text-white"></i>
+                            </a>
+                            <a href="#" class="social-link bg-instagram">
+                                <i class="fab fa-instagram w-6 h-6 text-white"></i>
+                            </a>
+                            <a href="#" class="social-link bg-twitter">
+                                <i class="fab fa-twitter w-6 h-6 text-white"></i>
+                            </a>
+                        </div>
+                        <a href="index.html#contact" class="btn-secondary mt-12">Contact Us</a>
+                    </div>
+                </div>
+
+                <div class="border-t border-footer-border pt-8 text-center">
+                    <p class="text-footer-text text-sm">
+                        © 2024 MAXX Energy. All rights reserved. | Powering the future with solar innovation.
+                    </p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        function toggleSection(section) {
+            const content = document.getElementById(section + '-content');
+            const indicator = document.getElementById(section + '-indicator');
+            
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                indicator.classList.add('expanded');
+            } else {
+                content.style.display = 'none';
+                indicator.classList.remove('expanded');
+            }
+        }
+
+        // Initialize all sections as collapsed
+        document.addEventListener('DOMContentLoaded', function() {
+            const sections = ['company', 'contact', 'data', 'profile'];
+            sections.forEach(section => {
+                const content = document.getElementById(section + '-content');
+                if (content) {
+                    content.style.display = 'none';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

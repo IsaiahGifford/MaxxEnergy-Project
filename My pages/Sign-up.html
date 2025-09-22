@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- Link to your CSS (exact name match) -->
+  <link rel="stylesheet" href="Sign-up.css">
+
+  <title>Sign Up</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="maxx-energy-logo.png" alt="MAXX Energy Logo">
+    </div>
+    <h1>Sign Up</h1>
+    <div class="underline"></div>
+    <form onsubmit="handleSubmit(event)">
+      <input type="text" name="firstName" placeholder="First Name" required>
+      <input type="text" name="lastName" placeholder="Last Name" required>
+      <input type="email" name="email" placeholder="Email" required>
+      <input type="password" name="password" placeholder="Password" required>
+      <button type="submit">Submit</button>
+    </form>
+  </div>
+
+  <script>
+    function handleSubmit(event) {
+      event.preventDefault(); // Prevent the default form submission
+      
+      // Redirect to BaseLogin.html after form submission
+      window.location.href = "Base Login.html"; // Redirect to the login page
+    }
+  </script>
+</body>
+</html>
